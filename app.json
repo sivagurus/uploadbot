@@ -1,6 +1,7 @@
 {
-  "name": "TG URL Uploader ",
+  "name": "Etuploadbot ",
   "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot. Create your Fork now.",
+  "logo": "http://icons.iconarchive.com/icons/wikipedia/flags/1024/ET-Ethiopia-Flag-icon.png",
   "keywords": [
     "telegram",
     "best",
@@ -14,9 +15,9 @@
     "remote",
     "uploader"
   ],
-  "success_url": "https://telegram.dog/AnyDLBot",
-  "website": "https://github.com/TGExplore/TG_URL_Uploader",
-  "repository": "https://github.com/TGExplore/TG_URL_Uploader",
+  "success_url": "https://telegram.dog/Etuploadbot",
+  "website": "https://github.com/madibag/uploadbot",
+  "repository": "https://github.com/madibag/uploadbot",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
