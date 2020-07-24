@@ -68,14 +68,12 @@ async def get_link(bot, update):
             message_id=a.message_id
         )
         end_one = datetime.now()
-        url = "https://transfer.sh/{}.{}".format(str(update.from_user.id), str(download_extension))
-        max_days = "5"
+        url = "https://file.io/?expires=1w"
+        max_days = "7"
         command_to_exec = [
             "curl",
             # "-H", 'Max-Downloads: 1',
-            "-H", 'Max-Days: 5', # + max_days + '',
-            "--upload-file", after_download_file_name,
-            url
+            "-F",after_download_file_name,url
         ]
         await bot.edit_message_text(
             text=Translation.UPLOAD_START,
@@ -95,7 +93,8 @@ async def get_link(bot, update):
             return False
         else:
             logger.info(t_response)
-            t_response_arry = t_response.decode("UTF-8").split("\n")[-1].strip()
+            t_response_arry = t_response.json()
+            t_response_arry = t_response_arry['link']
         await bot.edit_message_text(
             chat_id=update.chat.id,
             text=Translation.AFTER_GET_DL_LINK.format(t_response_arry, max_days),
