@@ -73,7 +73,7 @@ async def get_link(bot, update):
         command_to_exec = [
             "curl",
             # "-H", 'Max-Downloads: 1',
-            "-F","file="after_download_file_name,url
+            "-F","file=",after_download_file_name,url
         ]
         await bot.edit_message_text(
             text=Translation.UPLOAD_START,
