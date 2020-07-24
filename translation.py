@@ -14,10 +14,10 @@ This is a Telegram URL Upload Bot!
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
 URL | filename | username | password"""
     NOYES_URL = "@robot URL detected. Please use https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
-    DOWNLOAD_START = "trying to download"
-    UPLOAD_START = "trying to upload"
+    DOWNLOAD_START = "downloading..."
+    UPLOAD_START = "uploading..."
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
-    RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.5GB due to Telegram API limitations."
+    RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 2GB due to Telegram API limitations."
     AFTER_SUCCESSFUL_UPLOAD_MSG = "Thanks . Join @TGBotsZ"
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds. \nThanks . Join @TGBotsZ \nUploaded in {} seconds."
     NOT_AUTH_USER_TEXT = "Please /upgrade your subscription."
@@ -36,8 +36,7 @@ Telegram ID: <code>{}</code>
 Plan name : Free User
 Expires on : 31/12/2020
 
-Support Group : @InFoTelGroup
-© @TGBotsZ & @CWProjects"""
+"""
     HELP_USER = """There are multiple things I can do:
 1. Send url (Link|New Name with Extension).
 2. Send Custom Thumbnail (Optional).
@@ -47,13 +46,10 @@ Support Group : @InFoTelGroup
    Video  - Give File as video without Screenshots
    DFile  - Give File without Screenshots
    
-<b>👉 Create own Clone Bot : 👉</b> <a href='https://youtu.be/QkAkSLBgoYw'>Deploy</a>
 
 --------
 Send /me to know current plan details
-
-Support Group : @InFoTelGroup
-© @TGBotsZ & @CWProjects"""
+s"""
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
     REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
     REPLY_TO_DOC_FOR_SCSS = "Reply to a Telegram media to get screenshots"
